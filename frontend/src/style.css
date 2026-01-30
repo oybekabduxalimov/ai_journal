@@ -1,0 +1,169 @@
+:root {
+    --bg: #0f1115;
+    --panel: #161a22;
+    --text: #e6e8ee;
+    --muted: #a0a4b8;
+    --accent: #5f8cff;
+    --border: #23283a;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+.nav {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+.nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+.nav a:hover {
+    color: var(--text);
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+  
+  textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  
+.plan {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+.plan-title {
+    font-weight: 600;
+  }
+  
+.plan-reason {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  
+.plan-ai {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #d1d5ff;
+  }
+  
+.error {
+    color: #ff8b8b;
+    margin-bottom: 1rem;
+  }
+
+  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ---------- HEADER ---------- */
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .project-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .header-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .header-nav a:hover {
+    color: var(--text);
+  }
+  
+  /* ---------- MAIN ---------- */
+  
+  main.container {
+    flex: 1;
+  }
+  
+  /* ---------- FOOTER ---------- */
+  
+  .footer {
+    border-top: 1px solid var(--border);
+    padding: 0.9rem 1.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: center;
+  }
+  

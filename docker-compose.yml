@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: decision_mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: decision_journal
+      MYSQL_USER: dj_user
+      MYSQL_PASSWORD: dj_pass
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
